@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import "./scripts.js";
-import "./styles.css"
+import "./scripts/index.js";
+import "./styles/index.js"
 import IndexView from "./views/IndexView";
 import reportWebVitals from './reportWebVitals';
 

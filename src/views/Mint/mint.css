@@ -35,7 +35,7 @@
 .ehterAmount  {
     font-size: 28pt;
     font-style: URW;
-    font-family: Trattatello, fantasy;
+    font-family: Comic Sans MS, Comic Sans, cursive;
     color: #000 !important;
     text-align : center;
     margin : 5%
@@ -48,6 +48,7 @@
     text-align : center;
 }
 .mintAmount {
+    font-family : Trattatello, fantasy;
     display: inline;
     margin : 20px;
     font-size: 50px;
@@ -59,6 +60,7 @@
 }
 .mintButton{
     font-size: 2em;
+    font-family: Brush Script MT, Brush Script Std, cursive;
     height: 15vh !important; 
     width: 20vw !important;
     border: none;

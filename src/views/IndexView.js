@@ -188,15 +188,15 @@ class IndexView extends React.Component {
                       <div className="af-class-video-link-wrap" />
                     </div>
                     <div className="af-class-sub-banner-right">
-                      <div className="af-class-sub-banner-right-box"><img src="images/Shape-6-copy-32x_1Shape-6-copy-32x.png" width="34.5" alt className="af-class-sub-banner-right-box-icon" />
+                      <div className="af-class-sub-banner-right-box"><img src="images/Shape-6-copy-32x_1Shape-6-copy-32x.png" width="34.5" alt = "true" className="af-class-sub-banner-right-box-icon" />
                         <h4 className="af-class-heading-7">Utility</h4>
                         <p className="af-class-paragraph-small">Free entry into monthly card tournaments with prizes for top players.</p>
                       </div>
-                      <div className="af-class-sub-banner-right-box af-class-middle"><img src="images/Shape-6-copy2x_1Shape-6-copy2x.png" width="34.5" alt className="af-class-sub-banner-right-box-icon" />
+                      <div className="af-class-sub-banner-right-box af-class-middle"><img src="images/Shape-6-copy2x_1Shape-6-copy2x.png" width="34.5" alt = "true" className="af-class-sub-banner-right-box-icon" />
                         <h4 className="af-class-heading-6"><strong>Physical 1/1 Item</strong></h4>
                         <p className="af-class-paragraph-small">A unique physical deck of cards available only to token holders (launching November 2021)</p>
                       </div>
-                      <div className="af-class-sub-banner-right-box"><img src="images/Shape-6-copy-22x_1Shape-6-copy-22x.png" width="34.5" alt className="af-class-sub-banner-right-box-icon" />
+                      <div className="af-class-sub-banner-right-box"><img src="images/Shape-6-copy-22x_1Shape-6-copy-22x.png" width="34.5" alt = "true" className="af-class-sub-banner-right-box-icon" />
                         <h4 className="af-class-heading-6">Periodic NFT Drops to Token Holders</h4>
                         <p className="af-class-paragraph-small af-class-no-margin">New NFTs airdropped for all token holders, creating more value.</p>
                       </div>

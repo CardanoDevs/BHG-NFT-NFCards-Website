@@ -1,6 +1,9 @@
 /* eslint-disable */
 
-import React from 'react'
+import React, { Component } from 'react'
+import {
+  Link
+} from "react-router-dom";
 import { createScope, map, transformProxies } from './helpers'
 
 const scripts = [
@@ -59,9 +62,9 @@ class IndexView extends React.Component {
     return (
       <span>
         <style dangerouslySetInnerHTML={{ __html: `
-          @import url(D:\\css\\normalize.css);
-          @import url(D:\\css\\webflow.css);
-          @import url(D:\\css\\nfcards.webflow.css);
+          @import url(/css/normalize.css);
+          @import url(/css/webflow.css);
+          @import url(/css/nfcards.webflow.css);
 
           @media (min-width:992px) {html.w-mod-js:not(.w-mod-ix) [data-w-id=\"f2c36912-6b01-b125-9c9d-1a5bc4de3978\"] {-webkit-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}html.w-mod-js:not(.w-mod-ix) [data-w-id=\"6c146070-59a3-0db7-9276-f16e800b9552\"] {-webkit-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}html.w-mod-js:not(.w-mod-ix) [data-w-id=\"ec471305-d8dc-9185-b690-6b557e7ef7ba\"] {-webkit-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}html.w-mod-js:not(.w-mod-ix) [data-w-id=\"31fe27e1-1127-990e-6e36-39bf63ae1a28\"] {-webkit-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}html.w-mod-js:not(.w-mod-ix) [data-w-id=\"ef44d446-95ac-d750-74a3-84bff1b412fc\"] {-webkit-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}}
         ` }} />
@@ -92,7 +95,10 @@ class IndexView extends React.Component {
                         <a href="#for-block" className="af-class-nav-link">The Future</a>
                       </div>
                       <div data-w-id="c80f3928-aa42-8f43-aa5d-1077fe0509e2" className="af-class-navlink">
-                        <a href="#" className="af-class-nav-link">FAQ</a>
+                        <a href="#for-faq" className="af-class-nav-link">FAQ</a>
+                      </div>
+                      <div data-w-id="c80f3928-aa42-8f43-aa5d-1077fe0509e2" className="af-class-navlink">
+                        <Link to="/mint" className="af-class-nav-link">Mint</Link>
                       </div>
                       <div data-w-id="a43cb818-1c98-e7c1-fe41-c8f88f61ed20" className="af-class-navlink" />
                     </nav>
@@ -179,7 +185,7 @@ class IndexView extends React.Component {
                       <div className="af-class-video-link-wrap" />
                     </div>
                     <div className="af-class-sub-banner-right">
-                      <div className="af-class-sub-banner-right-box"><img src="images/Shape-6-copy-32x_1Shape-6-copy-32x.png" width="34.5" alt="true" className="af-class-sub-banner-right-box-icon" />
+                      <div className="af-class-sub-banner-right-box"><img src="images/Shape-6-copy-22x_1Shape-6-copy-2x.png" width="34.5" alt="true" className="af-class-sub-banner-right-box-icon" />
                         <h4 className="af-class-heading-7">Utility</h4>
                         <p className="af-class-paragraph-small">Free entry into monthly card tournaments with prizes for top players.</p>
                       </div>
@@ -187,7 +193,7 @@ class IndexView extends React.Component {
                         <h4 className="af-class-heading-6"><strong>Physical 1/1 Item</strong></h4>
                         <p className="af-class-paragraph-small">A unique physical deck of cards available only to token holders (launching November 2021)</p>
                       </div>
-                      <div className="af-class-sub-banner-right-box"><img src="images/Shape-6-copy-22x_1Shape-6-copy-22x.png" width="34.5" alt="true" className="af-class-sub-banner-right-box-icon" />
+                      <div className="af-class-sub-banner-right-box"><img src="images/Shape-6-copy-22x_1Shape-6-copy-2x.png" width="34.5" alt="true" className="af-class-sub-banner-right-box-icon" />
                         <h4 className="af-class-heading-6">Periodic NFT Drops to Token Holders</h4>
                         <p className="af-class-paragraph-small af-class-no-margin">New NFTs airdropped for all token holders, creating more value.</p>
                       </div>
@@ -218,9 +224,11 @@ class IndexView extends React.Component {
               </section>
               <div className="af-class-section-2 af-class-wf-section">
                 <div className="af-class-content-wrapper af-class-slim w-container">
+                <section id="for-faq" className="af-class-price-section">
                   <div className="af-class-header-center-box af-class-_75">
                     <h2>FAQ<br /></h2>
                   </div>
+                  </section>
                   <div className="af-class-accordion-wrapper">
                     <div className="af-class-accordion-item">
                       <div id="q2" className="af-class-accordion-item-trigger">

@@ -59,9 +59,9 @@ class NotFoundView extends React.Component {
     return (
       <span>
         <style dangerouslySetInnerHTML={{ __html: `
-          @import url(D:\\css\\normalize.css);
-          @import url(D:\\css\\webflow.css);
-          @import url(D:\\css\\nfcards.webflow.css);
+          @import url(/css/normalize.css);
+          @import url(/css/webflow.css);
+          @import url(/css/nfcards.webflow.css);
         ` }} />
         <span className="af-view">
           <div>

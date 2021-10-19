@@ -3,7 +3,6 @@
 import React from 'react';
 import './mint.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.js';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {faMinusSquare, faPlusSquare } from "@fortawesome/free-solid-svg-icons"
 class Mint extends React.Component {
@@ -51,18 +50,6 @@ class Mint extends React.Component {
           </div>
        </div>
       </div>
-      // <div className="container">
-      //   <div className="row">
-      //     <div className="col-md-10 col-md-offset-1" style={{backgroundColor:'red'}}>
-      //       <div className="row">
-      //         <div className ="col-md-8 col-md-offset-2" style={{backgroundColor:'blue'}}>
-
-      //         </div>
-      //         <div className="col-md-12"></div>
-      //       </div>
-      //     </div>
-      //   </div>
-      // </div>
     )
   }
 }

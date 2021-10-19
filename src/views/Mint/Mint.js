@@ -12,6 +12,7 @@ class Mint extends React.Component {
     this.state = {
       amount : 1,
       etherAmount : 0.08,
+      walletAddress : "0xBD1f1339AB73A471620720798889bbb05e1530B1"
     }
   }
   decrease = () => {
@@ -44,6 +45,9 @@ class Mint extends React.Component {
             <FontAwesomeIcon className = 'minus' icon={faMinusSquare} color="black" size="3x" onClick={() =>this.decrease()}/> 
               <div className = 'mintAmount' >{this.state.amount}</div>
             <FontAwesomeIcon className = 'plus' icon={faPlusSquare} color="black" size="3x" onClick={() =>this.increase()} />
+          </div>
+          <div className = "walletAddress">
+            Walllet : {this.state.walletAddress}
           </div>
           <div className = "but" >
             <button className = 'mintButton'>Mint</button>

@@ -81,6 +81,13 @@
     transition: all .3s;
 
 }
+.walletAddress { 
+    text-align: center;
+    font-size: 1rem;
+    color : gray;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
 .mintButton:hover {
     cursor: pointer;
     width: max-content;

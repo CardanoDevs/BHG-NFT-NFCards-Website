@@ -11,7 +11,7 @@ class Mint extends React.Component {
 
     this.state = {
       amount : 1,
-      etherAmount : 0.08,
+      etherAmount : 0.05,
       walletAddress : "0xBD1f1339AB73A471620720798889bbb05e1530B1"
     }
   }
@@ -35,9 +35,10 @@ class Mint extends React.Component {
     return (
       <div className = 'content' >
          <div className="col-md-10 col-md-offset-1 maindiv" >
-          <h1 className="text-dark" >PUBLIC SALE OPEN</h1>
+          <h1 className="text-dark" >Mint Now</h1>
           <div className = 'ehterAmount' >
-          {this.state.amount * 0.08} ETH
+          
+          {(this.state.amount * this.state.etherAmount).toFixed(2)} ETH
           </div>
           <div className = "counter">
             <FontAwesomeIcon className = 'minus' icon={faMinusSquare} color="black" size="3x" onClick={() =>this.decrease()}/> 

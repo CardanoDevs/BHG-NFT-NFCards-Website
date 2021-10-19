@@ -1,5 +1,7 @@
+
 .maindiv {
     /* font-family: Never Settle,Ma Shan Zheng,New Tegomin,serif; */
+    font-family: arial !important;
     background-color: rgba(245, 245, 245, 0.933);
     padding: 2rem;
     display: block;
@@ -13,7 +15,8 @@
     margin-top: 5%;
     text-align: center;
     font-size: 64pt;
-    font-family: URW Chancery L, cursive;
+    /* font-family: URW Chancery L, cursive; */
+    font-family: arial !important;
 }
 
 .content{
@@ -35,7 +38,8 @@
 .ehterAmount  {
     font-size: 28pt;
     font-style: URW;
-    font-family: Comic Sans MS, Comic Sans, cursive;
+    /* font-family: Comic Sans MS, Comic Sans, cursive; */
+    font-family: arial !important;
     color: #000 !important;
     text-align : center;
     margin : 5%
@@ -49,7 +53,8 @@
   
 }
 .mintAmount {
-    font-family : Trattatello, fantasy;
+    /* font-family : Trattatello, fantasy; */
+    font-family: arial !important;
     display: inline;
     margin : 20px;
     font-size: 50px;
@@ -66,7 +71,8 @@
 }
 .mintButton{
     font-size: 2em;
-    font-family: Brush Script MT, Brush Script Std, cursive;
+    /* font-family: Brush Script MT, Brush Script Std, cursive; */
+    font-family: arial !important;
     height: 15vh !important; 
     width: 20vw !important;
     border: none;
@@ -93,7 +99,8 @@
     text-align: center;
     font-size: 1rem;
     color : gray;
-    font-family: 'Times New Roman', Times, serif;
+    /* font-family: 'Times New Roman', Times, serif; */
+    font-family: arial !important;
     font-style: italic;
 }
 .mintButton:hover {

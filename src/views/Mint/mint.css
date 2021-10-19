@@ -20,7 +20,6 @@
 }
 
 .content{
-    background :url(background.png) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -73,8 +72,7 @@
     font-size: 2em;
     /* font-family: Brush Script MT, Brush Script Std, cursive; */
     font-family: arial !important;
-    height: 15vh !important; 
-    width: 20vw !important;
+
     border: none;
     color : white;
     background-color: transparent;
@@ -124,4 +122,22 @@
     color : red;
 }
 
-
+@media only screen and (max-width: 800px) {
+    /* For mobile phones: */
+        body {
+            background-image: url(king.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-image-repeat: no-repeat;
+        }
+    }
+@media only screen and (min-width: 800px) {
+        /* For mobile phones: */
+            body {
+                background-image: url(background.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                border-image-repeat: no-repeat;
+                
+            }
+        }

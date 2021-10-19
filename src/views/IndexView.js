@@ -43,7 +43,7 @@ class IndexView extends React.Component {
       const loading = active.loading.then((script) => {
         new Function(`
           with (this) {
-            eval(arguments[0])
+            ${eval(arguments[0])}
           }
         `).call(window, script)
 

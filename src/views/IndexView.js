@@ -1,7 +1,9 @@
 /* eslint-disable */
-
-import React from 'react'
+import React, { Component } from 'react'
 import { createScope, map, transformProxies } from './helpers'
+import {
+  Link
+} from "react-router-dom";
 
 const scripts = [
   { loading: fetch("https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=6158f8cf9bf05511c0381164").then(body => body.text()), isAsync: false },
@@ -29,6 +31,10 @@ class IndexView extends React.Component {
 
       throw e
     }
+  }
+
+  onClick() {
+    
   }
 
   componentDidMount() {
@@ -93,6 +99,9 @@ class IndexView extends React.Component {
                       </div>
                       <div data-w-id="c80f3928-aa42-8f43-aa5d-1077fe0509e2" className="af-class-navlink">
                         <a href="#" className="af-class-nav-link">FAQ</a>
+                      </div>
+                      <div data-w-id="c80f3928-aa42-8f43-aa5d-1077fe0509e2" className="af-class-navlink">
+                        <Link to="/mint" className="af-class-nav-link">Mint</Link>
                       </div>
                       <div data-w-id="a43cb818-1c98-e7c1-fe41-c8f88f61ed20" className="af-class-navlink" />
                     </nav>

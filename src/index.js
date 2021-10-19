@@ -4,12 +4,12 @@ import './index.css';
 import App from './App';
 import "./scripts/index.js";
 import "./styles/index.js"
-import IndexView from "./views/IndexView";
+
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <IndexView  />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );

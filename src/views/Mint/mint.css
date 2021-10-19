@@ -1,0 +1,105 @@
+.maindiv {
+    /* font-family: Never Settle,Ma Shan Zheng,New Tegomin,serif; */
+    background-color: rgba(205, 205, 205, 0.933);
+    padding: 2rem;
+    display: block;
+    border-radius: 1rem;
+    height : 80vh!important;
+}
+
+.text-dark { 
+    color: #000!important;
+    padding: 0px;
+    margin-top: 5%;
+    text-align: center;
+    font-size: 64pt;
+    font-family: URW Chancery L, cursive;
+}
+
+.content{
+    background :url(background.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position : relative;
+    width : 100%;
+    height : 100vh;
+    padding-bottom: 2rem;
+    z-index: 15;
+    display: flex;
+    flex-wrap: wrap;
+    place-content: center;
+}
+
+.ehterAmount  {
+    font-size: 28pt;
+    font-style: URW;
+    font-family: Trattatello, fantasy;
+    color: #000 !important;
+    text-align : center;
+    margin : 5%
+}
+.amount {
+    margin : 0;
+    font-size: 28pt;
+    font-style : normal;
+    color: #000 !important;
+    text-align : center;
+}
+.mintAmount {
+    display: inline;
+    margin : 20px;
+    font-size: 50px;
+    color: black;
+}
+.counter{
+    margin:30px;
+    text-align: center;
+}
+.mintButton{
+    font-size: 2em;
+    height: 15vh !important; 
+    width: 20vw !important;
+    border: none;
+    color : white;
+    background-color: transparent;
+    box-sizing: border-box;
+    padding: 1rem 4rem;
+    width: auto;
+    height: -moz-fit-content;
+    height: fit-content;
+    position: relative;
+    z-index: 5;
+    text-align: center;
+    background-image: url(brush.png);
+    background-size: 100% 100%;
+    background-origin: padding-box;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+
+}
+.mintButton:hover {
+    cursor: pointer;
+    width: max-content;
+    color: #fd0211;
+    transform: scaleX(1.5);
+}
+.mintButton:hover {
+    cursor: pointer;
+    width: max-content;
+    color: #fd0211;
+}
+.but {
+    text-align: center;
+}
+.minus:hover {
+    color : red;
+}
+.plus:hover {
+    color : red;
+}
+
+

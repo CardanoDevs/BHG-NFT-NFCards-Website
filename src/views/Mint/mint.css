@@ -46,6 +46,7 @@
     font-style : normal;
     color: #000 !important;
     text-align : center;
+  
 }
 .mintAmount {
     font-family : Trattatello, fantasy;
@@ -53,6 +54,11 @@
     margin : 20px;
     font-size: 50px;
     color: black;
+    user-select:none;
+    -moz-user-select:none;
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -ms-user-select:none;
 }
 .counter{
     margin:30px;

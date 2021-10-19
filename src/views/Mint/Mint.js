@@ -25,12 +25,10 @@ class Mint extends React.Component {
   }
 
   increase = () => {
-    if(this.state.amount != 4){
       var val = this.state.amount + 1;
       this.setState({
         amount: val,
       })
-    }
   }
 
   render() {

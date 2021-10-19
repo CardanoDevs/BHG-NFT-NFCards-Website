@@ -1,9 +1,7 @@
 /* eslint-disable */
-import React, { Component } from 'react'
+
+import React from 'react'
 import { createScope, map, transformProxies } from './helpers'
-import {
-  Link
-} from "react-router-dom";
 
 const scripts = [
   { loading: fetch("https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=6158f8cf9bf05511c0381164").then(body => body.text()), isAsync: false },
@@ -31,10 +29,6 @@ class IndexView extends React.Component {
 
       throw e
     }
-  }
-
-  onClick() {
-    
   }
 
   componentDidMount() {
@@ -65,9 +59,9 @@ class IndexView extends React.Component {
     return (
       <span>
         <style dangerouslySetInnerHTML={{ __html: `
-          @import url(/css/normalize.css);
-          @import url(/css/webflow.css);
-          @import url(/css/nfcards.webflow.css);
+          @import url(D:\\css\\normalize.css);
+          @import url(D:\\css\\webflow.css);
+          @import url(D:\\css\\nfcards.webflow.css);
 
           @media (min-width:992px) {html.w-mod-js:not(.w-mod-ix) [data-w-id=\"f2c36912-6b01-b125-9c9d-1a5bc4de3978\"] {-webkit-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}html.w-mod-js:not(.w-mod-ix) [data-w-id=\"6c146070-59a3-0db7-9276-f16e800b9552\"] {-webkit-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}html.w-mod-js:not(.w-mod-ix) [data-w-id=\"ec471305-d8dc-9185-b690-6b557e7ef7ba\"] {-webkit-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}html.w-mod-js:not(.w-mod-ix) [data-w-id=\"31fe27e1-1127-990e-6e36-39bf63ae1a28\"] {-webkit-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}html.w-mod-js:not(.w-mod-ix) [data-w-id=\"ef44d446-95ac-d750-74a3-84bff1b412fc\"] {-webkit-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}}
         ` }} />
@@ -77,7 +71,7 @@ class IndexView extends React.Component {
               <div className="af-class-opaque-bubbles">
                 <div className="af-class-small-red-bubble"><img src="images/spalsh62x.png" width="36.5" data-w-id="31fe27e1-1127-990e-6e36-39bf63ae1a28" alt /></div>
                 <div className="af-class-green-top-bubble"><img src="images/splash82x.png" width={242} data-w-id="6c146070-59a3-0db7-9276-f16e800b9552" alt /></div>
-                <div className="af-class-small-blue-bubble"><img src="images/splash52x_1splash52x.png" width="36.5" data-w-id="ec471305-d8dc-9185-b690-6b557e7ef7ba" alt /></div>
+                <div className="af-class-small-blue-bubble"><img src="images/splash52x_1splash5@2x.png" width="36.5" data-w-id="ec471305-d8dc-9185-b690-6b557e7ef7ba" alt /></div>
                 <div className="af-class-red-bubble"><img src="images/splash92x.png" width={242} data-w-id="ef44d446-95ac-d750-74a3-84bff1b412fc" alt /></div>
                 <div className="af-class-small-green-bubble"><img src="images/splash42x.png" width="69.5" data-w-id="f2c36912-6b01-b125-9c9d-1a5bc4de3978" alt /></div>
                 <div className="af-class-bubbles-colors"><img src="images/splash-group12x.png" width="262.5" sizes="(max-width: 991px) 100vw, 262.5px" srcSet="images/splash-group12x-p-500.png 500w, images/splash-group12x.png 525w" alt /></div>
@@ -99,9 +93,6 @@ class IndexView extends React.Component {
                       </div>
                       <div data-w-id="c80f3928-aa42-8f43-aa5d-1077fe0509e2" className="af-class-navlink">
                         <a href="#" className="af-class-nav-link">FAQ</a>
-                      </div>
-                      <div data-w-id="c80f3928-aa42-8f43-aa5d-1077fe0509e2" className="af-class-navlink">
-                        <Link to="/mint" className="af-class-nav-link">Mint</Link>
                       </div>
                       <div data-w-id="a43cb818-1c98-e7c1-fe41-c8f88f61ed20" className="af-class-navlink" />
                     </nav>
@@ -144,7 +135,7 @@ class IndexView extends React.Component {
                           <a href="https://discord.gg/WpCD5RqCZs" target="_blank" className="af-class-social-link af-class-pink w-inline-block"><img src="images/kisspng-discord-computer-icons-android-challenge-5ad920f517ddb6.2835550815241791890978.png" loading="lazy" width={36} sizes="36px" srcSet="images/kisspng-discord-computer-icons-android-challenge-5ad920f517ddb6.2835550815241791890978-p-500.png 500w, images/kisspng-discord-computer-icons-android-challenge-5ad920f517ddb6.2835550815241791890978-p-800.png 800w, images/kisspng-discord-computer-icons-android-challenge-5ad920f517ddb6.2835550815241791890978.png 1600w" alt /></a>
                         </div>
                         <div className="af-class-footer-link-block">
-                          <a href="https://twitter.com/NFCards/" target="_blank" className="af-class-social-link af-class-yellow w-inline-block"><img src="images/twitter2x_1twitter2x.png" width={15} alt /></a>
+                          <a href="https://twitter.com/NFCards/" target="_blank" className="af-class-social-link af-class-yellow w-inline-block"><img src="images/twitter2x_1twitter@2x.png" width={15} alt /></a>
                         </div>
                       </div>
                     </div><img src="images/king-of-diamonds.jpg" loading="lazy" width={550} height={550} srcSet="images/king-of-diamonds-p-500.jpeg 500w, images/king-of-diamonds-p-800.jpeg 800w, images/king-of-diamonds-p-1080.jpeg 1080w, images/king-of-diamonds-p-1600.jpeg 1600w, images/king-of-diamonds-p-2000.jpeg 2000w, images/king-of-diamonds.jpg 2400w" sizes="(max-width: 767px) 100vw, 550px" alt className="af-class-image-2" />
@@ -159,7 +150,7 @@ class IndexView extends React.Component {
                       </div>
                       <div className="af-class-section af-class-wf-section">
                         <a href="#Header" className="af-class-social-link af-class-pink w-inline-block"><img src="images/kisspng-discord-computer-icons-android-challenge-5ad920f517ddb6.2835550815241791890978.png" loading="lazy" width={36} sizes="(max-width: 479px) 100vw, 36px" srcSet="images/kisspng-discord-computer-icons-android-challenge-5ad920f517ddb6.2835550815241791890978-p-500.png 500w, images/kisspng-discord-computer-icons-android-challenge-5ad920f517ddb6.2835550815241791890978-p-800.png 800w, images/kisspng-discord-computer-icons-android-challenge-5ad920f517ddb6.2835550815241791890978.png 1600w" alt /></a>
-                        <a href="#Header" className="af-class-social-link af-class-yellow w-inline-block"><img src="images/twitter2x_1twitter2x.png" width={15} alt /></a>
+                        <a href="#Header" className="af-class-social-link af-class-yellow w-inline-block"><img src="images/twitter2x_1twitter@2x.png" width={15} alt /></a>
                       </div>
                     </div>
                   </main>
@@ -188,15 +179,15 @@ class IndexView extends React.Component {
                       <div className="af-class-video-link-wrap" />
                     </div>
                     <div className="af-class-sub-banner-right">
-                      <div className="af-class-sub-banner-right-box"><img src="images/Shape-6-copy-32x_1Shape-6-copy-32x.png" width="34.5" alt = "true" className="af-class-sub-banner-right-box-icon" />
+                      <div className="af-class-sub-banner-right-box"><img src="images/Shape-6-copy-32x_1Shape-6-copy-32x.png" width="34.5" alt="true" className="af-class-sub-banner-right-box-icon" />
                         <h4 className="af-class-heading-7">Utility</h4>
                         <p className="af-class-paragraph-small">Free entry into monthly card tournaments with prizes for top players.</p>
                       </div>
-                      <div className="af-class-sub-banner-right-box af-class-middle"><img src="images/Shape-6-copy2x_1Shape-6-copy2x.png" width="34.5" alt = "true" className="af-class-sub-banner-right-box-icon" />
+                      <div className="af-class-sub-banner-right-box af-class-middle"><img src="images/Shape-6-copy-22x_1Shape-6-copy-2x.png" width="34.5" alt="true" className="af-class-sub-banner-right-box-icon" />
                         <h4 className="af-class-heading-6"><strong>Physical 1/1 Item</strong></h4>
                         <p className="af-class-paragraph-small">A unique physical deck of cards available only to token holders (launching November 2021)</p>
                       </div>
-                      <div className="af-class-sub-banner-right-box"><img src="images/Shape-6-copy-22x_1Shape-6-copy-22x.png" width="34.5" alt = "true" className="af-class-sub-banner-right-box-icon" />
+                      <div className="af-class-sub-banner-right-box"><img src="images/Shape-6-copy-22x_1Shape-6-copy-22x.png" width="34.5" alt="true" className="af-class-sub-banner-right-box-icon" />
                         <h4 className="af-class-heading-6">Periodic NFT Drops to Token Holders</h4>
                         <p className="af-class-paragraph-small af-class-no-margin">New NFTs airdropped for all token holders, creating more value.</p>
                       </div>
@@ -278,7 +269,7 @@ class IndexView extends React.Component {
                       <a href="https://discord.gg/WpCD5RqCZs" className="af-class-social-link af-class-pink w-inline-block"><img src="images/kisspng-discord-computer-icons-android-challenge-5ad920f517ddb6.2835550815241791890978.png" loading="lazy" width={36} sizes="36px" srcSet="images/kisspng-discord-computer-icons-android-challenge-5ad920f517ddb6.2835550815241791890978-p-500.png 500w, images/kisspng-discord-computer-icons-android-challenge-5ad920f517ddb6.2835550815241791890978-p-800.png 800w, images/kisspng-discord-computer-icons-android-challenge-5ad920f517ddb6.2835550815241791890978.png 1600w" alt /></a>
                     </div>
                     <div className="af-class-footer-link-block">
-                      <a href="https://twitter.com/NFCards/" className="af-class-social-link af-class-yellow w-inline-block"><img src="images/twitter2x_1twitter2x.png" width={15} alt /></a>
+                      <a href="https://twitter.com/NFCards/" className="af-class-social-link af-class-yellow w-inline-block"><img src="images/twitter2x_1twitter@2x.png" width={15} alt /></a>
                     </div>
                   </div>
                 </div>

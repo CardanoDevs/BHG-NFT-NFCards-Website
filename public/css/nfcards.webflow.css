@@ -2143,7 +2143,7 @@
   }
 
   .af-view .af-class-navbar {
-    display: none;
+    /* display: block; */
   }
 
   .af-view .af-class-hamburger-button {

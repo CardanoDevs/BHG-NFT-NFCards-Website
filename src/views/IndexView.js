@@ -38,16 +38,16 @@ class IndexView extends React.Component {
     const htmlEl = document.querySelector('html')
     htmlEl.dataset['wfPage'] = '6158f8cf9bf05552ee381167'
     htmlEl.dataset['wfSite'] = '6158f8cf9bf05511c0381164'
-
+    
+ 
     scripts.concat(null).reduce((active, next) => Promise.resolve(active).then((active) => {
       const loading = active.loading.then((script) => {
         new Function(`
           with (this) {
-            ${eval(arguments[0])}
+            eval(arguments[0])
           }
         `).call(window, script)
-
-        return next
+       return next
       })
 
       return active.isAsync ? next : loading
@@ -98,7 +98,7 @@ class IndexView extends React.Component {
                         <a href="#for-faq" className="af-class-nav-link">FAQ</a>
                       </div>
                       <div data-w-id="c80f3928-aa42-8f43-aa5d-1077fe0509e2" className="af-class-navlink">
-                        <Link to="/mint" className="af-class-nav-link">Mint</Link>
+                        <a href="/mint" className="af-class-nav-link">Mint</a>
                       </div>
                       <div data-w-id="a43cb818-1c98-e7c1-fe41-c8f88f61ed20" className="af-class-navlink" />
                     </nav>

@@ -8,7 +8,6 @@ import {faMinusSquare, faPlusSquare } from "@fortawesome/free-solid-svg-icons"
 class Mint extends React.Component {
   constructor (props) {
     super(props);
-
     this.state = {
       amount : 1,
       etherAmount : 0.05,

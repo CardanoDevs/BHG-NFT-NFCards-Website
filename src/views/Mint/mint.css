@@ -124,7 +124,7 @@
 
 @media only screen and (max-width: 800px) {
     /* For mobile phones: */
-        body {
+    .content {
             background-image: url(king.jpeg);
             background-size: cover;
             background-repeat: no-repeat;
@@ -133,7 +133,7 @@
     }
 @media only screen and (min-width: 800px) {
         /* For mobile phones: */
-            body {
+            .content {
                 background-image: url(background.png);
                 background-repeat: no-repeat;
                 background-size: cover;
